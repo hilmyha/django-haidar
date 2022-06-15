@@ -649,6 +649,12 @@ select {
   }
 }
 
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
@@ -658,6 +664,12 @@ select {
 @media (min-width: 1280px) {
   .container {
     max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
   }
 }
 
@@ -678,6 +690,10 @@ select {
   height: 100vh;
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .items-center {
   align-items: center;
 }
@@ -686,9 +702,62 @@ select {
   justify-content: center;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
 .bg-gray-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+}
+
+.bg-red-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(127 29 29 / var(--tw-bg-opacity));
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .font-serif {
@@ -700,9 +769,8 @@ select {
   line-height: 1;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.font-semibold {
+  font-weight: 600;
 }
 
 .leading-normal {
@@ -713,7 +781,12 @@ select {
   letter-spacing: 0em;
 }
 
-.text-slate-600 {
+.text-white {
   --tw-text-opacity: 1;
-  color: rgb(71 85 105 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:bg-red-800:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(153 27 27 / var(--tw-bg-opacity));
 }
